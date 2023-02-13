@@ -8,6 +8,10 @@
 body {
     width: 100%;
     height: 100vh;
+    display: flex;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 nav {
     width: 15%;
@@ -17,7 +21,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     color: #fff;
-    background-color: rgb(19, 16, 22);
+    background-color: rgba(0, 0, 0, 0.829) ;
 }
 nav .logo h2{
     font-size: 2em;
@@ -58,4 +62,59 @@ nav .user {
 }
 nav .user span {
     font-weight: bold;
+}
+
+
+/* MAIN */
+main {
+    background-color: rgba(13, 2, 24, 0.795);
+    padding: 80px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+main .search {
+    position: relative;
+    align-self: flex-end;
+}
+main .search input{
+    border-radius: 30px;
+    border: 2px solid blueviolet;
+    height: 40px;
+    width: 230px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding-left: 37px;
+}
+main .search i{
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    left: 5%;
+    top: 30%;
+    border-right: 2px solid rgba(255, 255, 255, 0.37);
+    padding-right: 5px;
+}
+
+
+main .filters {
+    color: #fff;
+    display: flex;
+    gap: 80px;
+    align-self: center;
+}
+main .filters .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+main .filters .item:hover {
+    color: blueviolet;
+}
+main .filters .item span, main .filters .item i{
+    font-size: 1.5em;
 }
