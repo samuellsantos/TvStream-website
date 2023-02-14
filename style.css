@@ -12,7 +12,6 @@ body {
     display: flex;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
     position: relative;
 }
 .menu i {
@@ -33,6 +32,7 @@ nav {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.829) ;
     position: relative;
+    transition: all .5s;
 }
 .active-menu {
     position: absolute;
@@ -121,6 +121,7 @@ main .filters {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     align-self: center;
 
@@ -183,7 +184,6 @@ main .filters .item span, main .filters .item i{
 .movie-details .details .about p{
     text-align: justify;
     font-size: 1.1em;
-    
 }
 
 .movie-details .details .list-details {
@@ -204,6 +204,7 @@ main .filters .item span, main .filters .item i{
 .movie-details .details .watch-movie {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top: 40px;
 }
 .movie-details .details .watch-movie .play a{
@@ -245,7 +246,8 @@ main .other-movies {
     align-items: center;
     align-self: center;
     gap: 30px;
-    height: 120px;
+    height: 150px;
+    width: 100%;
 }
 main .other-movies .movie {
     width: 80px;
@@ -270,7 +272,7 @@ main .other-movies .movie:hover {
         font-size: .88em;
     }
     nav {
-        left: -30%;
+        left: -100%;
         width: 20%;
         z-index: 100;
         position: absolute;
@@ -289,6 +291,61 @@ main .other-movies .movie:hover {
         justify-content: flex-start;
     }
 }
+@media (max-width: 830px) {
+    .movie-details .details .title h2{
+        font-size: 2em;
+    }
+    .movie-details .details .title .rate i {
+        font-size: 1em;
+    }
+    .movie-details .details .about {
+        max-width: 600px;
+    }
+    .movie-details .details .about p{
+        text-align: justify;
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 780px) {
+    main {
+        height: 170vh;
+    }
+    .movie-details {
+        flex-direction: column;
+    }
+    body {
+        background-size: auto;
+        background-position: top;
+    }
+    .movie-details .details .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav {
+        width: 40%;
+    }
+}
+@media (max-width: 440px) {
+    main {
+        height: 185vh;
+    }
+    .movie-details .details .watch-movie {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    main {
+        height: 190vh;
+    }
+    nav {
+        width: 70%;
+    }
+}    
+
 
 
 
