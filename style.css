@@ -161,10 +161,12 @@ main .filters .item span, main .filters .item i{
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    animation: upscale .6s linear;
 }
 
 .movie-details .details .title h2{
     font-size: 4em;
+    animation: upscale .6s linear;
 }
 .movie-details .details .title .rate {
     margin-bottom: 30px;
@@ -255,6 +257,7 @@ main .other-movies .movie {
     border-radius: 20px 20px 0 20px;
     transition: all .3s;
     overflow: hidden;
+    animation: upscale .6s linear;
 }
 main .other-movies .movie img{
     width: 100%;
@@ -345,6 +348,16 @@ main .other-movies .movie:hover {
         width: 70%;
     }
 }    
+
+
+@keyframes upscale {
+    from {
+        transform: scale(50%);
+    }
+    to {
+        transform: scale(100%);
+    }
+}
 
 
 

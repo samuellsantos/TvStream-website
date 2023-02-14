@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Stream</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ff004527f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      :root {
+        --principal: rgb(255, 255, 0);
+      }
+
+      body {
+        background-image: url(images/wallpaper-minions.jpg);
+      }
+      .movie-details .image {
+        background-image: url(images/capa3.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <i class="fa-solid fa-bars" id="menu"></i>
+    </div>
+    <!-- NAV -->
+    <nav>
+      <!-- LOGO -->
+      <div class="logo">
+        <h2>
+          Tv <br />
+          Stream
+        </h2>
+      </div>
+      <!-- NAVLINKS -->
+      <div class="navLinks">
+        <ul>
+          <li><a href="#">Tv shows</a></li>
+          <li><a href="#">Live TV</a></li>
+          <li><a href="#" class="active">Movies</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Video</a></li>
+        </ul>
+      </div>
+      <!-- USER -->
+      <div class="user">
+        <i class="fa-solid fa-user"></i> <span>My account</span>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Search -->
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text"/>
+      </div>
+
+      <div class="filters">
+        <div class="item">
+          <i class="fa-regular fa-star"></i>
+          <span>New</span>
+        </div>
+
+        <div class="item">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <span>Popular</span>
+        </div>
+
+        <div class="item">
+          <i class="fa-solid fa-medal"></i>
+          <span>Top rated</span>
+        </div>
+
+        <div class="item">
+          <i class="fa-regular fa-heart"></i>
+          <span>Favorite</span>
+        </div>
+
+        <div class="item">
+          <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
+          <span>History</span>
+        </div>
+      </div>
+
+      <!-- Movie details -->
+      <div class="movie-details">
+        <div class="image"></div>
+        <div class="details">
+          <div class="title">
+            <h2>Black Panter 2</h2>
+            <div class="rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>2022</span>
+            </div>
+          </div>
+
+          <div class="about">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad harum
+              repellendus aliquam dolore quos. Neque explicabo, commodi
+              voluptatum dignissimos ipsam quis ut tenetur distinctio animi
+              sunt. Deleniti, sed. Exercitationem, magnam? Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Obcaecati quibusdam vero velit,
+              incidunt nam maiores consequuntur numquam animi quam. Hic
+              consequuntur labore similique nihil ea. Tempore dignissimos
+              praesentium est nesciunt?
+            </p>
+          </div>
+
+          <div class="list-details">
+            <span
+              ><span class="list-title">Genre:</span> Lorem ipsum dolor
+              sit</span
+            >
+            <span><span class="list-title">Runtime: </span> 120 min</span>
+            <span><span class="list-title">Country:</span> USA</span>
+          </div>
+
+          <div class="watch-movie">
+            <div class="play">
+              <a href="#"><i class="fa-solid fa-play"></i>PLAY</a>
+            </div>
+            <div class="favorite">
+              <i class="fa-solid fa-heart" id="hearth"></i>
+              <span>Add to Favorite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="other-movies">
+        <a href="gato-de-botas.html">
+          <div class="movie"><img src="images/capa1.jpg" /></div>
+        </a>
+        <a href="sonic.html">
+          <div class="movie"><img src="images/capa7.jpg" /></div>
+        </a>
+        <a href="pantera-negra.html">
+          <div class="movie"><img src="images/capa4.jpg" /></div>
+        </a>
+        <a href="avatar.html">
+          <div class="movie"><img src="images/capa5.jpg" /></div>
+        </a>
+        <a href="ferdinando.html">
+          <div class="movie"><img src="images/capa2.jpg" /></div>
+        </a>
+        <a href="doutor-estranho.html">
+          <div class="movie"><img src="images/capa8.jpg" /></div>
+        </a>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
